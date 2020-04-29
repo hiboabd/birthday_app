@@ -14,34 +14,26 @@ h1 {
   margin-left: 40px;
 }
 </style>
+
 </head>
-<body>
+  <body>
 
-<h1>Hello There!</h1>
+    <h1>Hello There!</h1>
 
-<h1>What is your name?</h1>
+    <h1>What is your name?</h1>
 
-<form>
-  <label for="name">
-    Name
-    <input type="text" name="name">
-  </label>
-</form>
+    <form action="/birthday" method="post">
+      <label for="name">
+        Name:
+        <input type="text" name="name">
+      </label>
+      <h1>And what is your birthday?</h1>
+      <label for="birthday">
+        Birthday:
+        <input type="text" name="birthday">
+      </label>
+      <input type="submit" value="Go!">
+    </form>
 
-
-<h1>And what is your birthday?</h1>
-
-<form>
-  <label for="birthday">
-    Birthday
-    <input type="text" birthday="birthday">
-  </label>
-</form>
-
-  <form action="/redirect" method="post">
-  <input type="submit" value="Submit">
-  </form>
-
-
-</body>
+  </body>
 </html>

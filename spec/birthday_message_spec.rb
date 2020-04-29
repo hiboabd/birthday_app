@@ -1,9 +1,11 @@
 require 'spec_helper'
 
 feature 'Birthday message page' do
-  scenario 'clicking submit takes you to next page' do
+  scenario 'page shows name and birthday message' do
     visit('/')
+    fill_in :name, with: 'Hibo'
+    fill_in :birthday, with: '26/03/1997'
     click_button 'Submit'
-    expect(page).to have_content("Placeholder birthday message")
+    expect(page).to have_content("Happy birthday Hibo")
   end
 end

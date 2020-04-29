@@ -2,15 +2,16 @@ require 'sinatra'
 require 'sinatra/base'
 
 class Birthday < Sinatra::Base
+
+  enable :sessions
+
   get '/' do
     erb(:index)
   end
 
-  post '/redirect' do
-    redirect '/birthday'
-  end
-
-  get '/birthday' do
+  post '/birthday' do
+    @name = params[:name]
+    @birthday = params[:birthday]
     erb(:birthday_message)
   end
 end
