@@ -7,11 +7,4 @@ feature 'testing homepage' do
     expect(page).to have_content "What is your name?"
     expect(page).to have_content "And what is your birthday?"
   end
-
-  # scenario 'visiting homepage and using form' do
-  #   visit('/')
-  #   fill_in :name, with: 'Hibo'
-  #   click_button 'Submit'
-  #   expect(page).to have_content()
-  # end
 end
