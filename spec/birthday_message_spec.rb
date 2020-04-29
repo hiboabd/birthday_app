@@ -5,7 +5,7 @@ feature 'Birthday message page' do
     visit('/')
     fill_in :name, with: 'Hibo'
     fill_in :birthday, with: '26/03/1997'
-    click_button 'Submit'
+    click_button 'Go!'
     expect(page).to have_content("Happy birthday Hibo")
   end
 end

@@ -12,6 +12,6 @@ class Birthday < Sinatra::Base
   post '/birthday' do
     @name = params[:name]
     @birthday = params[:birthday]
-    erb(:birthday_message)
+    erb(:birthday)
   end
 end
