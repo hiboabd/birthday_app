@@ -7,7 +7,7 @@ class Birthday < Sinatra::Base
   enable :sessions
 
   def birthday?
-    @birthday == Date.today.strftime("%d/%m/%y")
+    @birthday == Date.today.strftime("%d/%m")
   end
 
   get '/' do
@@ -27,6 +27,7 @@ class Birthday < Sinatra::Base
   end
 
   get '/non_birthday' do
+    @name = session[:name]
     erb(:non_birthday)
   end
 end
