@@ -1,17 +1,32 @@
 require 'sinatra'
 require 'sinatra/base'
+require 'date'
 
 class Birthday < Sinatra::Base
 
   enable :sessions
 
+  def birthday?
+    @birthday == Date.today.strftime("%d/%m/%y")
+  end
+
   get '/' do
     erb(:index)
   end
 
-  post '/birthday' do
-    @name = params[:name]
+  post '/decider' do
+    session[:name] = params[:name]
     @birthday = params[:birthday]
+    redirect '/non_birthday' unless birthday?
+    redirect '/birthday'
+  end
+
+  get '/birthday' do
+    @name = session[:name]
     erb(:birthday)
+  end
+
+  get '/non_birthday' do
+    erb(:non_birthday)
   end
 end
