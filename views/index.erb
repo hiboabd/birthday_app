@@ -1,34 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
   <style>
     body {
-      background: #A45990;
-      background: -moz-linear-gradient(left, #A45990 0%, #2388CB 100%, #FFFFFF 100%);
-      background: -webkit-linear-gradient(left, #A45990 0%, #2388CB 100%, #FFFFFF 100%);
-      background: linear-gradient(to right, #A45990 0%, #2388CB 100%, #FFFFFF 100%);
+      background: #FEAC5E;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+      font-family: 'Staatliches', cursive;
       font-size: 28px;
-      Position: absolute;
-      Top: 20%;
-      Left: 30%;
-      Transform: translate(-10%, -10%);
-    }
-
-    label {
-      Position: relative;
-      Left: 20%;
+      color: white;
+      Transform: translate(-1%, 20%);
 
     }
-
-    .title {
-      Position: relative;
-      Left: 20%;
-    }
-
     h1 {
-      color: maroon;
+
       margin-left: 40px;
     }
 
@@ -36,6 +24,7 @@
 </head>
 
 <body>
+  <center>
   <div class="title">  <h1>Hello There!</h1>   </div>
 
     <h1>What is your name?</h1>
@@ -52,6 +41,7 @@
       </label>
       <input type="submit" value="Go!">
     </form>
+    </center>
 </body>
 
 </html>
