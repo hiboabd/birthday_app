@@ -1,14 +1,23 @@
-# A Simple Birthday Web App
+# Welcome to A Simple Birthday Greeter App 👋
 
-One Paragraph of project description goes here
+This web app posts a birthday message if it's a user's birthday or it will tell the user how many days are remaining until their birthday.
+
+More specifically, the web app asks the user for a name and birthday. When the user submits the form, and depending on the current date, the app will either:
+
+  - wish the user happy birthday
+  - tell them how long they'll have to wait until their next birthday
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### Pre-requisites
 
-What things you need to install the software and how to install them
+You will need to install the following software (links are provided which cover how to install them)
+  - A text editor of your choice. I recommend [Atom](https://atom.io).
+  - Ruby version 2.7.0. [Download here](https://www.ruby-lang.org/en/downloads/)
+  -
+  - Homebrew [Instructions here](https://brew.sh)
 
 ```
 Give examples
@@ -58,23 +67,20 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Sinatra](https://github.com/sinatra/sinatra) - The web framework used
+* [Capybara](https://github.com/teamcapybara/capybara) - The framework used to test web applications
+* [Rack](https://github.com/rack/rack) - The interface that manages the communication between the webserver and the ruby app
+
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
+## Author
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+👤 **Hibo Abdilaahi**
 
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* Github: [@Hiboabd](https://github.com/Hiboabd)
 
 ## License
 
@@ -82,6 +88,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* This inspiration for this project comes from the Makers Academy birthday app challenge on the third week of the course. More information about the challenge can be found [here](https://github.com/makersacademy/course/blob/master/intro_to_the_web/post_challenges/birthday_app.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
