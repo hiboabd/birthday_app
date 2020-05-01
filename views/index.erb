@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-  background-color: linen;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 28px;
-  align-items: center;
-}
+  <style>
+    body {
+      background: #A45990;
+      background: -moz-linear-gradient(left, #A45990 0%, #2388CB 100%, #FFFFFF 100%);
+      background: -webkit-linear-gradient(left, #A45990 0%, #2388CB 100%, #FFFFFF 100%);
+      background: linear-gradient(to right, #A45990 0%, #2388CB 100%, #FFFFFF 100%);
 
-h1 {
-  color: maroon;
-  margin-left: 40px;
-}
-</style>
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-size: 28px;
+      Position: absolute;
+      Top: 20%;
+      Left: 30%;
+      Transform: translate(-10%, -10%);
+    }
 
+    label {
+      Position: relative;
+      Left: 20%;
+
+    }
+
+    .title {
+      Position: relative;
+      Left: 20%;
+    }
+
+    h1 {
+      color: maroon;
+      margin-left: 40px;
+    }
+
+  </style>
 </head>
-  <body>
 
-    <h1>Hello There!</h1>
+<body>
+  <div class="title">  <h1>Hello There!</h1>   </div>
 
     <h1>What is your name?</h1>
 
@@ -34,6 +52,6 @@ h1 {
       </label>
       <input type="submit" value="Go!">
     </form>
+</body>
 
-  </body>
 </html>

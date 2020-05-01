@@ -1,14 +1,11 @@
 require 'sinatra'
 require 'sinatra/base'
 require 'date'
+require './lib/birthday'
 
 class Birthday < Sinatra::Base
 
   enable :sessions
-
-  def birthday?
-    @birthday == Date.today.strftime("%d/%m")
-  end
 
   get '/' do
     erb(:index)
@@ -16,8 +13,9 @@ class Birthday < Sinatra::Base
 
   post '/decider' do
     session[:name] = params[:name]
-    @birthday = params[:birthday]
-    redirect '/non_birthday' unless birthday?
+    session[:birthday] = params[:birthday]
+    @birthday = session[:birthday]
+    redirect '/non_birthday' unless Calculate.new.birthday?(@birthday)
     redirect '/birthday'
   end
 
@@ -27,6 +25,8 @@ class Birthday < Sinatra::Base
   end
 
   get '/non_birthday' do
+    @birthday = session[:birthday]
+    @days = Calculate.new.days_left(@birthday)
     @name = session[:name]
     erb(:non_birthday)
   end

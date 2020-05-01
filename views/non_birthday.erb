@@ -1,1 +1,21 @@
-<h1> Your birthday will be in 10 days, <%= @name %> </h1>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 24px;
+  Position: absolute;
+  Top: 30%;
+  Left: 30%;
+  Transform: translate(-10%, -10%);
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+
+<h1> Your birthday will be in <%= @days %> days, <%= @name %> </h1>
